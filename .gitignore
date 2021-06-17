@@ -2,6 +2,7 @@
 /FirstContact/backend/node_modules
 /FirstContact/mobile/node_modules
 /FirstContact/typescript/node_modules
+/GoBarber/backend/node_modules
 #Local env files
 .env.local
 .env.development.local
