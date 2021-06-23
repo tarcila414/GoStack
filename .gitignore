@@ -9,3 +9,5 @@
 #Local env files
 .env.local
 .env.development.local
+
+/GoBarber/backend/ormconfig.json
