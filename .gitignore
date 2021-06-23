@@ -4,6 +4,8 @@
 /FirstContact/typescript/node_modules
 /GoBarber/backend/node_modules
 /GoBarber/backend/.vscode
+/GoBarber/backend/tmp/*
+!/GoBarber/backend/tmp/.gitkeep
 #Local env files
 .env.local
 .env.development.local
