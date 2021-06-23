@@ -6,8 +6,16 @@
 /GoBarber/backend/.vscode
 /GoBarber/backend/tmp/*
 !/GoBarber/backend/tmp/.gitkeep
+/GoBarber/backend/ormconfig.json
+/GitExplore/frontend/node_modules
+/GitExplore/frontend/.pnp
+/GitExplore/frontend/.pnp.js
+/GitExplore/frontend/coverage
+/GitExplore/frontend/build
+/GitExplore/frontend/.DS_Store
+/GitExplore/frontend/npm-debug.log*
+/GitExplore/frontend/yarn-debug.log*
+/GitExplore/frontend/yarn-error.log*
 #Local env files
 .env.local
 .env.development.local
-
-/GoBarber/backend/ormconfig.json
