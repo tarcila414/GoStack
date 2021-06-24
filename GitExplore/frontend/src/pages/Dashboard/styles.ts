@@ -1,5 +1,6 @@
-import styled from 'styled-components';
 import { shade } from 'polished';
+import styled from 'styled-components';
+
 
 export const Title = styled.h1`
     font-size: 48px;
@@ -78,7 +79,8 @@ export const Repositories = styled.div`
         }
 
         div { 
-            margin-left: 16px;
+            margin: 0px 16px;
+            flex: 1;
 
             strong { 
                 font-size: 20px;
