@@ -105,6 +105,7 @@ export const Repositories = styled.div`
             p { 
                 font-size: 18px;
                 color: #A8A8B3;
+                margin-top: 4px;
             }
         }
         
