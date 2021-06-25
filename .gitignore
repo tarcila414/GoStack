@@ -7,6 +7,15 @@
 /GoBarber/backend/tmp/*
 !/GoBarber/backend/tmp/.gitkeep
 /GoBarber/backend/ormconfig.json
+/GoBarber/frontend/node_modules
+/GoBarber/frontend/.pnp
+/GoBarber/frontend/.pnp.js
+/GoBarber/frontend/coverage
+/GoBarber/frontend/build
+/GoBarber/frontend/.DS_Store
+/GoBarber/frontend/npm-debug.log*
+/GoBarber/frontend/yarn-debug.log*
+/GoBarber/frontend/yarn-error.log*
 /GitExplore/frontend/node_modules
 /GitExplore/frontend/.pnp
 /GitExplore/frontend/.pnp.js
@@ -16,6 +25,4 @@
 /GitExplore/frontend/npm-debug.log*
 /GitExplore/frontend/yarn-debug.log*
 /GitExplore/frontend/yarn-error.log*
-#Local env files
-.env.local
-.env.development.local
+
