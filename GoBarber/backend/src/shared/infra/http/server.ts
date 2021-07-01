@@ -5,7 +5,7 @@ import cors from 'cors';
 
 import routes from './routes';
 
-import '../database'
+import '../typeorm'
 
 import uploadConfig from '../../../config/upload';
 
