@@ -4,7 +4,7 @@ import { getCustomRepository } from 'typeorm';
 import Appointment from "../infra/typeorm/entities/Appointment";
 import AppointmentRepository from "../repositories/AppointmentRepository";
 
-import AppError from '../../../shared/errors/AppError';
+import AppError from '@shared/errors/AppError';
 
 interface RequestDTO {
     provider_id: string;
