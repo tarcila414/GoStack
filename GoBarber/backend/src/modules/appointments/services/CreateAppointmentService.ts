@@ -6,14 +6,18 @@ import AppointmentRepository from "../infra/typeorm/repositories/AppointmentRepo
 
 import AppError from '@shared/errors/AppError';
 import IAppointmentsRepository from '../repositories/IAppointmentsRepository';
+import { inject, injectable } from 'tsyringe';
 
 interface IRequestDTO {
     provider_id: string;
     date: Date;
 }
 
+@injectable()
 class CreateAppointmentService {
     constructor(
+
+       @inject('AppointmentsRepository') 
        private appointmentsRepository: IAppointmentsRepository
     ) {}
 
