@@ -1,7 +1,7 @@
 import { Request,  Response } from 'express';
 import { container } from 'tsyringe';
 
-import AuthenticateUserService from '../../../services/AuthenticationUserService';
+import AuthenticateUserService from '../../../services/AuthenticateUserService';
 
 export default class SessionsController {
     public async create(req: Request, res: Response ): Promise<Response>  {
