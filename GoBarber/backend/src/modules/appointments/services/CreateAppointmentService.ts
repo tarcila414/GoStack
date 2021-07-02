@@ -1,8 +1,6 @@
 import { startOfHour } from 'date-fns';
-import { getCustomRepository } from 'typeorm';
 
 import Appointment from "../infra/typeorm/entities/Appointment";
-import AppointmentRepository from "../infra/typeorm/repositories/AppointmentRepository";
 
 import AppError from '@shared/errors/AppError';
 import IAppointmentsRepository from '../repositories/IAppointmentsRepository';
@@ -22,8 +20,6 @@ class CreateAppointmentService {
     ) {}
 
     public async execute({date, provider_id}:  IRequestDTO): Promise<Appointment >{
-        const appointmentsRepository = getCustomRepository(AppointmentRepository);
-
         const appointmentDate = startOfHour(date);
     
         const findAppointmentInSameDate = await this.appointmentsRepository.findByDate(appointmentDate);
