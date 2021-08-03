@@ -9,15 +9,21 @@ import AppointmentRepository from '@modules/appointments/infra/typeorm/repositor
 import IUsersRepository from '@modules/users/repositories/IUsersRepository';
 import UserRepository from '@modules/users/infra/typeorm/repositories/UsersRepository';
 
+import IUserTokensRepository from '@modules/users/repositories/IUserTokensRepository';
+import UserTokensRepository from '@modules/users/infra/typeorm/repositories/UserTokensRepository';
+
 //registerSingleton cria uma única instancia da classe AppointmentRepository para nossa aplicacao inteira
 container.registerSingleton<IAppointmentsRepository>(
     'AppointmenstRepository', 
     AppointmentRepository
 );
 
-
-
 container.registerSingleton<IUsersRepository>(
     'UsersRepository', 
     UserRepository
+);
+
+container.registerSingleton<IUserTokensRepository>(
+    'UserTokensRepository', 
+    UserTokensRepository
 );
